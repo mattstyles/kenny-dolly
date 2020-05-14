@@ -1,0 +1,26 @@
+{
+  "name": "kenny-dolly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@most/core": "^1.5.0",
+    "@most/hold": "^4.1.0",
+    "@most/hold2": "npm:@most/hold@^2.0.0",
+    "@most/scheduler": "^1.2.3",
+    "eventemitter3": "^4.0.4",
+    "most": "^1.8.1",
+    "most-from-event": "^1.1.2",
+    "rxjs": "^6.5.5",
+    "xstream": "^11.11.0"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
+}

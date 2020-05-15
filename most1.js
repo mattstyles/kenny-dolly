@@ -22,7 +22,12 @@ console.log('Attaching immediately')
 var stream = most.fromEvent('action', ee)
 var held = hold(stream)
 
-held.observe(log('  1. Observing on creation::  '))
+const subscription = held.subscribe({
+  next: log('  1. Observing on creation::  ')
+})
+// Detaching immediately from a held stream is fine, hold will still
+// fire out messages to new observers (it won't if you never observe)
+subscription.unsubscribe()
 
 // Emitting here is async so it'll fire on the next tick, after the message
 // from the delay function.
